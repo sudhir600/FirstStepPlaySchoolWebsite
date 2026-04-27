@@ -1,733 +1,1230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>THE First Step Play School</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-        <link rel="icon" type="image/x-icon" href="img/school.png">
+  <head>
+    <meta charset="utf-8" />
+    <title>THE First Step Play School</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link rel="icon" type="image/x-icon" href="img/school.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css" />
+    <link href="./css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet"> 
-
-        <!-- Icon Font Stylesheet -->
-
-        <link rel="stylesheet" href="./css/fontawesome/css/all.min.css"/>
-        <link href="./css/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <!-- Navbar start -->
-        <div class="container-fluid border-bottom wow fadeInDown" data-wow-delay="0.01s">
-            <div class="container topbar d-none d-lg-block py-2">
-                <div class="d-flex justify-content-between">
-                    <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Imamganj-824206</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="mailto:office@thePlaySchool.com" target="_blank" class="text-white">office@thePlaySchool.com</a></small>
-                    </div>
-                    <div class="top-link pe-2">
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-twitter text-secondary"></i></a>
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-secondary"></i></a>
-                        <a href="javascript:void(0)" onclick="goToOkulProErp()" class="btn btn-lightx" id="memberLoginBtnTop"><i class="fas fa-lock text-danger"></i>
-                            <span class="text-primary">Managment Login</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-0">
-                <nav class="navbar navbar-light navbar-expand-lg py-4">
-                    <a href="#" class="navbar-brand school-name">
-                        <span class="text-primary display-6">First Step</span>
-                        <span class="text-secondary"> Play School</span>
-                    </a>
-                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars text-primary"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="program.html" class="nav-item nav-link">Programs</a>
-                            <a href="event.html" class="nav-item nav-link">Events</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                    <a href="team.html" class="dropdown-item">Our Team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <div class="d-flex">
-                            <div id="phone-tada" class="d-flex align-items-centerx justify-content-centerx ps-4">
-                                <a 
-                                href="https://wa.me/919876543210?text=I have enquiry about admission." 
-                                target="_blank" 
-                                class="position-relative wow tada" 
-                                data-wow-delay=".9s"
-                                >
-                                    <i class="fa fa-phone-alt text-primary fa-2x me-x4"></i>
-                                    <div class="position-absolute" style="top: -7px; left: 20px;">
-                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+  <body>
+    <div
+      data-view="NavbarContainer"
+      class="container-fluid border-bottom wow fadeInDown"
+      data-wow-delay="0.01s"
+    >
+      <div class="container topbar d-none d-lg-block py-2">
+        <div class="d-flex justify-content-between">
+          <div class="top-info ps-2">
+            <small class="me-3"
+              ><i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+              <a href="#" class="text-white">Imamganj-824206</a></small
+            >
+            <small class="me-3"
+              ><i class="fas fa-envelope me-2 text-secondary"></i
+              ><a
+                href="mailto:office@thePlaySchool.com"
+                target="_blank"
+                class="text-white"
+                >office@thePlaySchool.com</a
+              ></small
+            >
+          </div>
+          <div class="top-link pe-2">
+            <a href="" class="btn btn-light btn-sm-square rounded-circle"
+              ><i class="fab fa-facebook-f text-secondary"></i
+            ></a>
+            <a href="" class="btn btn-light btn-sm-square rounded-circle"
+              ><i class="fab fa-twitter text-secondary"></i
+            ></a>
+            <a href="" class="btn btn-light btn-sm-square rounded-circle"
+              ><i class="fab fa-instagram text-secondary"></i
+            ></a>
+            <a href="" class="btn btn-light btn-sm-square rounded-circle me-0"
+              ><i class="fab fa-linkedin-in text-secondary"></i
+            ></a>
+            <a
+              href="javascript:void(0)"
+              onclick="goToOkulProErp()"
+              class="btn btn-lightx"
+              id="memberLoginBtnTop"
+              ><i class="fas fa-lock text-danger"></i>
+              <span class="text-primary">Managment Login</span>
+            </a>
+          </div>
         </div>
-        <!-- Navbar End -->
-
-        <!-- Hero Start -->
-        <div class="container-fluid py-5 hero-header wow fadeIn weCareYourBaby" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-7 col-md-12">
-                        <h1 class="mb-3 banner-text-1">We Care Your Baby</h1>
-                        <h1 class="mb-5 display-1 text-white  banner-text-2">
-                            <span class="text-highlight1">The Best</span> Play school 
-                            <span class="text-small">in town
-
-                                </span>
-                        </h1>
-                        <span class="banner-text-3">
-                            Some info can be place you want.. lorem porem ispum donor
-                            Some info can be place you want.. lorem porem ispum donor
-                            Some info can be place you want.. lorem porem ispum donor
-                            Some info can be place you want.. lorem porem ispum donor
-                        </span>
-                    </div>
+      </div>
+      <div class="container px-0">
+        <nav class="navbar navbar-light navbar-expand-lg py-4">
+          <a href="#" class="navbar-brand school-name">
+            <span class="text-primary display-6">First Step</span>
+            <span class="text-secondary"> Play School</span>
+          </a>
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+              <a
+                href="void(0)"
+                onclick="javascript: Window.refresh();"
+                class="nav-item nav-link active"
+              >
+                Home
+              </a>
+              <a href="#about" class="nav-item nav-link">About</a>
+              <a href="#services" class="nav-item nav-link">Services</a>
+              <a href="#facilities" class="nav-item nav-link">Facilities</a>
+              <a href="#teachers" class="nav-item nav-link">Teachers</a>
+              <!-- <div class="nav-item dropdown" style="display: none">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Pages</a
+                >
+                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                  <a href="blog.html" class="dropdown-item">Our Blog</a>
+                  <a href="team.html" class="dropdown-item">Our Team</a>
+                  <a href="testimonial.html" class="dropdown-item"
+                    >Testimonial</a
+                  >
+                  <a href="404.html" class="dropdown-item">404 Page</a>
                 </div>
+              </div> -->
+              <a href="#contacts" class="nav-item nav-link">Contact</a>
             </div>
-        </div>
-        <!-- Hero End -->
-
-        <!-- About Start -->
-        <div class="container-fluid py-5 about bg-light">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="video border">
-                            <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                                <span></span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
-                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">About Us</h4>
-                        <h1 class="text-dark mb-4 display-5">We Learn Smart Way To Build Bright Futute For Your Children</h1>
-                        <p class="text-dark mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                        </p>
-                        <div class="row mb-4">
-                            <div class="col-lg-6">
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Sport Activites</h6>
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Outdoor Games</h6>
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Friendly Environment</h6>
-                            
-                            </div>
-                            <div class="col-lg-6">
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Highly Secured</h6>
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>24x7 CCTV Coverage</h6>
-                                <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Qualified Teacher</h6>
-                            </div>
-                        </div>
-                        <a href="javascript:void(0)" onclick="showMoreAboutDetails()" class="btn btn-primary px-5 py-3 btn-border-radius">More Details</a>
-                    </div>
-                </div>
+            <div class="d-flex">
+              <div
+                class="d-flex align-items-centerx justify-content-centerx ps-4"
+              >
+                <a
+                  href="https://wa.me/919876543210?text=I have enquiry about admission."
+                  target="_blank"
+                  class="position-relative wow tada"
+                  data-wow-delay=".9s"
+                >
+                  <i class="fa fa-phone-alt text-primary fa-2x me-x4"></i>
+                  <div class="position-absolute" style="top: -7px; left: 20px">
+                    <span
+                      ><i class="fa fa-comment-dots text-secondary"></i
+                    ></span>
+                  </div>
+                </a>
+              </div>
             </div>
-        </div>
+          </div>
+        </nav>
+      </div>
+    </div>
 
-        <!-- Modal Video -->
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                allow="autoplay"></iframe>
-                        </div>
-                    </div>
-                </div>
+    <div
+      data-view="HeroContainer"
+      class="container-fluid py-5 hero-header wow fadeIn weCareYourBaby"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-2">
+        <div class="row g-5">
+          <div class="owl-carousel hero-slider owl-loaded owl-drag">
+            <div class="col-lg-7 col-md-12">
+              <h1 class="mb-3 banner-text-1">We Care Your Baby</h1>
+              <h1 class="mb-5 display-1 text-white banner-text-2">
+                <span class="text-highlight1">The Best</span> Play school
+                <span class="text-small">in town </span>
+              </h1>
+              <div class="banner-text-3">
+                <p>
+                  We don’t just teach children, we help them grow with
+                  confidence, creativity, and strong values. Through fun and
+                  engaging activities, learning becomes enjoyable and natural
+                  for every child.
+                </p>
+                <p>
+                  Our caring teachers give personal attention so each child
+                  feels safe, happy, and understood. In a secure and nurturing
+                  environment, children learn to express themselves and build
+                  friendships.
+                </p>
+                <p>
+                  We focus on creating a strong and positive foundation for
+                  their future.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- About End -->
+      </div>
+    </div>
 
-        <!-- Service Start -->
-        <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.03s" style="max-width: 700px;">
-                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">What We Offer</h4>
-                    <h1 class="mb-5 display-3">Building Strong Foundations for Your Child</h1>
-                </div>
-                <div class="row g-5 whatWeOfferSection">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="0.03s">
-                        <div class="text-center border-primary border bg-white service-item">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-inner">
-                                    <div class="p-2"><i class="fas fa-gamepad fa-6x text-primary"></i></div>
-                                    <h4 class="">Play-Based Learning & Game</h4>
-                                    <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui officiis animi Lorem ipsum dolor sit amet, 
-                                        consectetur adipisicing elit.</p>
-                                    <!-- <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="0.03s">
-                        <div class="text-center border-primary border bg-white service-item">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-inner">
-                                    <div class="p-2"><i class="fas fa-sort-alpha-down fa-6x text-primary"></i></div>
-                                    <a href="#" class="h4">Creative Activities</a>
-                                    <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui officiis animi Lorem ipsum dolor sit amet, 
-                                        consectetur adipisicing elit.</p>
-                                    <!-- <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="0.05s">
-                        <div class="text-center border-primary border bg-white service-item">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-inner">
-                                    <div class="p-2"><i class="fas fa-users fa-6x text-primary"></i></div>
-                                    <a href="#" class="h4">Caring & Trained Teachers</a>
-                                    <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui officiis animi Lorem ipsum dolor sit amet, 
-                                        consectetur adipisicing elit.</p>
-                                    <!-- <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="0.05s">
-                        <div class="text-center border-primary border bg-white service-item">
-                            <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                <div class="service-content-inner">
-                                    <div class="p-4"><i class="fas fa-user-nurse fa-6x text-primary"></i></div>
-                                    <a href="#" class="h4">Healthy Mind & Habits</a>
-                                    <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui officiis animi Lorem ipsum dolor sit amet, 
-                                        consectetur adipisicing elit.</p>
-                                    <!-- <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div data-view="About" class="container-fluid py-5 about bg-light">
+      <div class="container mtxx-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="video border">
+              <button
+                type="button"
+                class="btn btn-play"
+                data-bs-toggle="modal"
+                data-src="https://www.youtube.com/embed/m8v7Y5quXNc"
+                data-bs-target="#videoModal"
+              >
+                <span></span>
+              </button>
             </div>
-        </div>
-        <!-- Service End -->
+          </div>
+          <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+            <a name="about"></a>
+            <h4
+              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            >
+              About Us
+            </h4>
+            <h1 class="text-dark mb-4 display-5">
+              Building a Happy and Confident Future for Your Child
+            </h1>
+            <p class="text-dark mb-4">
+              Every child is unique, and we give them the care and attention
+              they deserve. Through fun learning, interactive activities, and a
+              safe space, we help children explore, express, and grow with
+              confidence.
+              <br />
 
-        <!-- Programs Start -->
-        <div class="container-fluid program  py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"><big>Facilities</big></h4>
-                    <h1 class="mb-5 display-3">Safe, smart & well-equipped facilities for kids</h1>
-                </div>
-                <div class="row g-5 justify-content-left">
-                    <div id="facilities-1" class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.01s">
-                        <div class="program-item rounded">
-                            <div class="program-img position-relative">
-                                <div class="overflow-hidden img-border-radius">
-                                    <img src="img/program-1.jpg" class="img-fluid w-100" alt="Image">
-                                </div>
-                                <div class="py-2 bg-primary text-white program-rate">#1</div>
-                            </div>
-                            <div class="program-text bg-white px-4 pb-3">
-                                <div class="program-text-inner">
-                                    <a href="#" class="h4">Pick-up & Drop Service</a>
-                                    <p class="mt-3 mb-0 fs-6">
-                                    We provide safe and reliable transport for your child at affordable rates.
-                                    This service is optional and can be chosen as per your need.
-                                    Recommended for parents who live far from the school.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- <div class="program-teacher d-flex align-items-center border-top border-primary bg-white px-4 py-3">
-                                <img src="img/program-teacher.jpg" class="img-fluid rounded-circle p-2 border border-primary bg-white" alt="Image" style="width: 70px; height: 70px;">
-                                <div class="ms-3">
-                                    <h6 class="mb-0 text-primary">Mary Mordern</h6>
-                                    <small>Arts Designer</small>
-                                </div>
-                            </div> -->
-                            <div class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom">
-                                <!--<small class="text-white"><i class="fas fa-wheelchair me-1"></i> 3 Cab Sits</small><small class="text-white"><i class="fas fa-clock me-1"></i></small>-->
-                            </div>
-                        </div>
-                    </div>
-                    <div id="facilities-2" class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.01s">
-                        <div class="program-item rounded">
-                            <div class="program-img position-relative">
-                                <div class="overflow-hidden img-border-radius">
-                                    <img src="img/program-2.jpg" class="img-fluid w-100" alt="Image">
-                                </div>
-                                <div class="px-4 py-2 bg-primary text-white program-rate">#2</div>
-                            </div>
-                            <div class="program-text bg-white px-4 pb-3">
-                                <div class="program-text-inner">
-                                    <a href="#" class="h4">CCTV Surveillance</a>
-                                    <p class="mt-3 mb-0">
-                                        Child safety is our top priority, <br />
-                                        so the entire campus is covered with CCTV and continuously monitored to ensure complete safety and peace of mind.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"></div>
-                        </div>
-                    </div>
-                    <div id="facilities-3"  class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.03s">
-                        <div class="program-item rounded">
-                            <div class="program-img position-relative">
-                                <div class="overflow-hidden img-border-radius">
-                                    <img src="img/program-3.jpg" class="img-fluid w-100" alt="Image">
-                                </div>
-                                <div class="px-4 py-2 bg-primary text-white program-rate">#3</div>
-                            </div>
-                            <div class="program-text bg-white px-4 pb-3">
-                                <div class="program-text-inner">
-                                    <a href="#" class="h4">Fully Secured Campus</a>
-                                    <p class="mt-3 mb-0">Boundary fencing + gated entry for protection. </p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"></div>
-                        </div>
-                    </div>
-
-                    <div id="facilities-4"  class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.03s">
-                        <div class="program-item rounded">
-                            <div class="program-img position-relative">
-                                <div class="overflow-hidden img-border-radius">
-                                    <img src="img/program-3.jpg" class="img-fluid w-100" alt="Image">
-                                </div>
-                                <div class="px-4 py-2 bg-primary text-white program-rate">#4</div>
-                            </div>
-                            <div class="program-text bg-white px-4 pb-3">
-                                <div class="program-text-inner">
-                                    <a href="#" class="h4">General Science</a>
-                                    <p class="mt-3 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed purus consectetur,</p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"></div>
-                        </div>
-                    </div>
-
-                    <div id="facilities-5"  class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.05s">
-                        <div class="program-item rounded">
-                            <div class="program-img position-relative">
-                                <div class="overflow-hidden img-border-radius">
-                                    <img src="img/program-3.jpg" class="img-fluid w-100" alt="Image">
-                                </div>
-                                <div class="px-4 py-2 bg-primary text-white program-rate">#5</div>
-                            </div>
-                            <div class="program-text bg-white px-4 pb-3">
-                                <div class="program-text-inner">
-                                    <a href="#" class="h4">Caring Support Staff (Dai Care)</a>
-                                    <p class="mt-3 mb-0">Chhote bachchon ke liye proper care & attention.</p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"></div>
-                        </div>
-                    </div>
-
-                    <div id="facilities-5"  class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.05s">
-                        <div class="program-item rounded">
-                            <div class="program-img position-relative">
-                                <div class="overflow-hidden img-border-radius">
-                                    <img src="img/program-3.jpg" class="img-fluid w-100" alt="Image">
-                                </div>
-                                <div class="px-4 py-2 bg-primary text-white program-rate">#6</div>
-                            </div>
-                            <div class="program-text bg-white px-4 pb-3">
-                                <div class="program-text-inner">
-                                    <a href="#" class="h4">Morning Assembly with Sound System</a>
-                                    <p class="mt-3 mb-0">Daily assembly for discipline & confidence. Extra activity on every saturday</p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"></div>
-                        </div>
-                    </div>
-                </div> 
+              Our nurturing environment feels like a second home, where learning
+              becomes a joyful journey.
+            </p>
+            <h6 class="mb-4">
+              Here’s what makes our environment perfect for your child’s growth
+              and well-being. <br />
+            </h6>
+            <div class="row mb-4">
+              <div class="col-lg-6">
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2"></i>Sport Activites
+                </h6>
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2 text-primary"></i>Outdoor
+                  Games
+                </h6>
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2 text-primary"></i>Friendly
+                  Environment
+                </h6>
+              </div>
+              <div class="col-lg-6">
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2"></i>Highly Secured
+                </h6>
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2 text-primary"></i>24x7 CCTV
+                  Coverage
+                </h6>
+                <h6>
+                  <i class="fas fa-check-circle me-2 text-secondary"></i
+                  >Qualified Teacher
+                </h6>
+              </div>
             </div>
+            <a
+              href="javascript:void(0)"
+              onclick="showMoreAboutDetails()"
+              class="btn btn-primary px-5 py-3 btn-border-radius d-none"
+              >More Details</a
+            >
+          </div>
         </div>
-        <!-- Program End -->
+      </div>
+    </div>
 
-        <!-- Team Start-->
-        <div class="container-fluid team py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center wow fadeInRight" style="max-width: 600px;">
-                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Team</h4>
-                    <h1 class="mb-5 display-3">Meet With Our Expert Teacher</h1>
-                </div>
-                <div class="row g-5 justify-content-center">
-                    <div id="t1" class="col-md-6 col-lg-3 col-xl-3 wow fadeInLeft">
-                        <div class="team-item border border-primary img-border-radius overflow-hidden">
-                            <img src="img/team-1.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-icon d-flex align-items-center justify-content-center">
-                            </div>
-                            <div class="team-content text-center py-3">
-                                <h4 class="text-primary">Linda Carlson</h4>
-                                <p class="text-muted mb-2">English Teacher</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="t2" class="col-md-6 col-lg-3 col-xl-3 wow fadeInLeft">
-                        <div class="team-item border border-primary img-border-radius overflow-hidden">
-                            <img src="img/team-2.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-icon d-flex align-items-center justify-content-center">
-                                <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="team-content text-center py-3">
-                                <h4 class="text-primary">Linda Carlson</h4>
-                                <p class="text-muted mb-2">English Teacher</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="t3" class="col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" >
-                        <div class="team-item border border-primary img-border-radius overflow-hidden">
-                            <img src="img/team-3.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-icon d-flex align-items-center justify-content-center">
-                                <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="team-content text-center py-3">
-                                <h4 class="text-primary">Linda Carlson</h4>
-                                <p class="text-muted mb-2">English Teacher</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="t4" class="col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" >
-                        <div class="team-item border border-primary img-border-radius overflow-hidden">
-                            <img src="img/team-3.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-icon d-flex align-items-center justify-content-center">
-                                <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="team-content text-center py-3">
-                                <h4 class="text-primary">Linda Carlson</h4>
-                                <p class="text-muted mb-2">English Teacher</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="t5" class="col-md-6 col-lg-3 col-xl-3 wow fadeInRight">
-                        <div class="team-item border border-primary img-border-radius overflow-hidden">
-                            <img src="img/team-1.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-icon d-flex align-items-center justify-content-center">
-                            </div>
-                            <div class="team-content text-center py-3">
-                                <h4 class="text-primary">Linda Carlson</h4>
-                                <p class="text-muted mb-2">English Teacher</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="t6" class="col-md-6 col-lg-3 col-xl-3 wow fadeInRight">
-                        <div class="team-item border border-primary img-border-radius overflow-hidden">
-                            <img src="img/team-2.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-icon d-flex align-items-center justify-content-center">
-                                <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="team-content text-center py-3">
-                                <h4 class="text-primary">Linda Carlson</h4>
-                                <p class="text-muted mb-2">English Teacher</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="t7" class="col-md-6 col-lg-3 col-xl-3 wow fadeInRight">
-                        <div class="team-item border border-primary img-border-radius overflow-hidden">
-                            <img src="img/team-3.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-icon d-flex align-items-center justify-content-center">
-                                <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="team-content text-center py-3">
-                                <h4 class="text-primary">Linda Carlson</h4>
-                                <p class="text-muted mb-2">English Teacher</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="t8" class="col-md-6 col-lg-3 col-xl-3 wow fadeInRight">
-                        <div class="team-item border border-primary img-border-radius overflow-hidden">
-                            <img src="img/team-4.jpg" class="img-fluid w-100" alt="">
-                            <div class="team-icon d-flex align-items-center justify-content-center">
-                                <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="team-content text-center py-3">
-                                <h4 class="text-primary">Linda Carlson</h4>
-                                <p class="text-muted mb-2">English Teacher</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      data-view="SharedModal"
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="embed-responsive-item"
+                src=""
+                id="video"
+                allowfullscreen
+                allowscriptaccess="always"
+                allow="autoplay"
+              ></iframe>
             </div>
+          </div>
         </div>
-        <!-- Team End-->
+      </div>
+    </div>
 
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center wow zoomIn" style="max-width: 700px;">
-                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Testimonials</h4>
-                    <h1 class="mb-5 display-3">Parents Say About Us</h1>
+    <div data-view="Service" class="container-fluid service py-5">
+      <div class="container py-5">
+        <a name="services"></a>
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.03s"
+          style="max-width: 700px"
+        >
+          <h4
+            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+          >
+            What We Offer
+          </h4>
+
+          <h1 class="mb-5 display-4">
+            Building Strong Foundations for Your Child
+          </h1>
+        </div>
+        <div class="row g-5 whatWeOfferSection">
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
+            data-wow-delay="0.03s"
+          >
+            <div
+              class="text-center border-primary border bg-white service-item"
+            >
+              <div
+                class="service-content d-flex align-items-center justify-content-center p-4"
+              >
+                <div class="service-content-inner">
+                  <div class="p-2">
+                    <i class="fas fa-gamepad fa-6x text-primary"></i>
+                  </div>
+                  <h4 class="">Play-Based Learning & Game</h4>
+                  <p class="my-3">
+                    We follow a play-based curriculum where children learn
+                    numbers, letters, and basic concepts through games, puzzles,
+                    and hands-on activities. This helps improve memory, focus,
+                    and problem-solving skills naturally.
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a> -->
                 </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="wow fadeInUp testimonial-item img-border-radius bg-light border border-primary p-4">
-                        <div class="p-4 position-relative">
-                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                            <div class="d-flex align-items-center">
-                                <div class="border border-primary bg-white rounded-circle">
-                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
-                                </div>
-                                <div class="ms-4">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="border-top border-primary mt-4 pt-3">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wow zoomIn testimonial-item img-border-radius bg-light border border-primary p-4">
-                        <div class="p-4 position-relative">
-                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                            <div class="d-flex align-items-center">
-                                <div class="border border-primary bg-white rounded-circle">
-                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
-                                </div>
-                                <div class="ms-4">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="border-top border-primary mt-4 pt-3">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wow fadeInDown testimonial-item img-border-radius bg-light border border-primary p-4">
-                        <div class="p-4 position-relative">
-                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                            <div class="d-flex align-items-center">
-                                <div class="border border-primary bg-white rounded-circle">
-                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
-                                </div>
-                                <div class="ms-4">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="border-top border-primary mt-4 pt-3">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-        <!-- Testimonial End -->
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 pt-1">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="footer-item">
-                            <h2 href="#" class="navbar-brand school-name">
-                                <span class="text-primary display-6">First Step</span>
-                                <span class="text-secondary"> Play School</span>
-                            </h2>
-                            <p class="mb-4 mt-5 footerSideText">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
-                            <div class="d-flex flex-column p-3 ps-3 text-dark border border-secondary" 
-                            style="border-radius: 50% 20% / 10% 40%;">
-                            <h4 class="text-secondary mb-2 border-bottom border-secondary border-2 d-inline-block p-2 title-border-radius">
-                            Timing
-                            </h4>
-                            <div style="margin-left: 30px;">
-                                <p>Monday: 8am to 5pm</p>
-                                <p>Tuesday: 8am to 5pm</p>
-                                <p>Wednes: 8am to 5pm</p>
-                                <p>Thursday: 8am to 5pm</p>
-                                <p>Friday: 8am to 5pm</p>
-                                <p>Saturday: 8am to 5pm</p>
-                                <p class="mb-0 textRed">Sunday: Closed</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5 col-xl-4">
-                        <div class="footer-item">
-                            <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">LOCATION</h4>
-                            <div class="d-flex flex-column align-items-start">
-                                <a href="" class="text-body mb-4"><i class="fa fa-map-marker-alt text-primary me-2"></i> Imamgang, Raniganj, Bihar- 824206</a>
-                                <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-phone-alt text-primary me-2"></i> (+91) 123456 7890</a>
-                                <a href="" class="text-start rounded-0 text-body mb-4"><i class="fas fa-envelope text-primary me-2"></i> firstStepPlaySchool@gmail.com</a>
-                                <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</a>
-                                <div class="footer-icon d-flex">
-                                    <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" class="btn btn-primary btn-sm-square rounded-circle text-white"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">OUR GALLARY</h4>
-                            <div class="row g-3">
-                                <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-1" alt="">
-                                    </div>
-                               </div>
-                               <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-1" alt="">
-                                    </div>
-                               </div>
-                               <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-1" alt="">
-                                    </div>
-                               </div>
-
-                               <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-1" alt="">
-                                    </div>
-                               </div>
-
-                               <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-1" alt="">
-                                    </div>
-                               </div>
-
-                               <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-1" alt="">
-                                    </div>
-                               </div>
-                               <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-1" alt="">
-                                    </div>
-                               </div>
-                               <div class="col-4">
-                                    <div class="footer-galary-img rounded-circle border border-primary">
-                                        <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-1" alt="">
-                                    </div>
-                               </div>
-                               
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
+            data-wow-delay="0.03s"
+          >
+            <div
+              class="text-center border-primary border bg-white service-item"
+            >
+              <div
+                class="service-content d-flex align-items-center justify-content-center p-4"
+              >
+                <div class="service-content-inner">
+                  <div class="p-2">
+                    <i class="fas fa-sort-alpha-down fa-6x text-primary"></i>
+                  </div>
+                  <a href="#" class="h4">Creative Activities</a>
+                  <p class="my-3">
+                    Daily activities like <b>drawing</b>, <b>coloring</b>,
+                    <b>music</b>, <b>dance</b>, and storytelling help children
+                    express their thoughts and emotions. These activities also
+                    improve creativity, imagination, and fine motor skills.
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a> -->
                 </div>
+              </div>
             </div>
-            
-        </div>
-        <!-- Footer End -->
-
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright bg-dark py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 my-auto text-white developerCredit">
-                       Developed by Sudhir gupta
-                    </div>
-                    <div class="col-sm-6 col-md-4 text-center copyrightText">
-                        <span class="text-light color-primary">Copyright 2025-2026, <br />First Step Play School. All Rights Reserved.</span>
-                    </div>
-                     <div class="col-sm-6 col-md-4 col-sm-4" id="memberLoginFooter">
-                        <div class="footer-icon d-flex">
-                            <a 
-                            href="javascript:void(0)" 
-                            onclick="goToOkulProErp()" 
-                            class="btn btn-primary me-3 text-white">
-                                <i class="fas fa-lock"></i>Managment Login
-                            </a>
-                        </div>
-                    </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
+            data-wow-delay="0.05s"
+          >
+            <div
+              class="text-center border-primary border bg-white service-item"
+            >
+              <div
+                class="service-content d-flex align-items-center justify-content-center p-4"
+              >
+                <div class="service-content-inner">
+                  <div class="p-2">
+                    <i class="fas fa-users fa-6x text-primary"></i>
+                  </div>
+                  <a href="#" class="h4">Caring & Trained Teachers</a>
+                  <p class="my-3">
+                    Our teachers are trained in early childhood education and
+                    understand how to handle kids with patience and care. Each
+                    child gets personal attention to support their learning pace
+                    and emotional needs.
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
+            data-wow-delay="0.05s"
+          >
+            <div
+              class="text-center border-primary border bg-white service-item"
+            >
+              <div
+                class="service-content d-flex align-items-center justify-content-center p-4"
+              >
+                <div class="service-content-inner">
+                  <div class="p-4">
+                    <i class="fas fa-user-nurse fa-6x text-primary"></i>
+                  </div>
+                  <a href="#" class="h4">Healthy Mind & Habits</a>
+                  <p class="my-3">
+                    We teach children good habits like cleanliness, sharing,
+                    discipline, and basic routines. Along with this, we focus on
+                    emotional development so children feel confident, secure,
+                    and happy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top">
-            <i class="fa fa-arrow-up"></i>
-        </a>   
-        
+      </div>
+    </div>
 
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/spinner.js"></script>
-        <!-- JavaScript Libraries ends -->
-    </body>
+    <!-- facilities-section-start -->
+    <div data-view="Facilities" class="container-fluid program py-5">
+      <div class="container py-5">
+        <a name="facilities"></a>
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 700px"
+        >
+          <h4
+            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+          >
+            <b>Facilities</b>
+          </h4>
+          <h1 class="mb-5 display-4">
+            Safe, smart & well-equipped facilities for kids
+          </h1>
+        </div>
+
+        <div class="row g-5 justify-content-left">
+          <!-- facilities-1-pick-drop -->
+          <div
+            id="facilities-1"
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
+            data-wow-delay="0.01s"
+          >
+            <div class="program-item rounded">
+              <div class="program-img position-relative">
+                <div class="overflow-hidden img-border-radius">
+                  <img
+                    src="img/program-1.jpg"
+                    class="img-fluid w-100"
+                    alt="Image"
+                  />
+                </div>
+                <div class="py-2 bg-primary text-white program-rate">#1</div>
+              </div>
+              <div class="program-text bg-white px-4 pb-3">
+                <div class="program-text-inner">
+                  <a href="#" class="h4">Pick-up & Drop Service</a>
+                  <p class="mt-3 mb-0 fs-6">
+                    We provide <b>safe and reliable transport</b> for children
+                    at affordable rates. Our drivers are well-trained and drive
+                    very carefully, ensuring your child’s daily travel is smooth
+                    and secure.
+                    <span class="text-secondary pt-2 d-block small">
+                      Parents can either use this service or manage pick-up and
+                      drop on their own—this facility is completely optional.
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <!-- 
+              <div
+                class="program-teacher d-flex align-items-center border-top border-primary bg-white px-4 py-3"
+              >
+                <img
+                  src="img/program-teacher.jpg"
+                  class="img-fluid rounded-circle p-2 border border-primary bg-white"
+                  alt="Image"
+                  style="width: 70px; height: 70px"
+                />
+                <div class="ms-3">
+                  <h6 class="mb-0 text-primary">Mary Mordern</h6>
+                  <small>Arts Designer</small>
+                </div>
+              </div> -->
+              <div
+                class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"
+              >
+                <!--<small class="text-white"><i class="fas fa-wheelchair me-1"></i> 3 Cab Sits</small><small class="text-white"><i class="fas fa-clock me-1"></i></small>-->
+              </div>
+            </div>
+          </div>
+
+          <!-- facilities-2-morning-assembly -->
+          <div
+            id="facilities-2-morning-assembly"
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
+            data-wow-delay="0.05s"
+          >
+            <div class="program-item rounded">
+              <div class="program-img position-relative">
+                <div class="overflow-hidden img-border-radius">
+                  <img
+                    src="img/program-3.jpg"
+                    class="img-fluid w-100"
+                    alt="Image"
+                  />
+                </div>
+                <div class="px-4 py-2 bg-primary text-white program-rate">
+                  #2
+                </div>
+              </div>
+              <div class="program-text bg-white px-4 pb-3">
+                <div class="program-text-inner">
+                  <a href="#" class="h4">Morning Assembly with Sound System</a>
+                  <p class="mt-3 mb-0">
+                    The daily assembly is conducted using a sound system and
+                    speakers, so every child can hear clearly. The day begins
+                    with the national anthem, promoting respect & unity. We
+                    follow a two-uniform system during the week, building
+                    discipline and a sense of belonging.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"
+              ></div>
+            </div>
+          </div>
+
+          <!-- facilies-3-cctv-surveillance -->
+          <div
+            id="facilities-3-cctv-surveillance"
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
+            data-wow-delay="0.01s"
+          >
+            <div class="program-item rounded">
+              <div class="program-img position-relative">
+                <div class="overflow-hidden img-border-radius">
+                  <img
+                    src="img/program-2.jpg"
+                    class="img-fluid w-100"
+                    alt="Image"
+                  />
+                </div>
+                <div class="px-4 py-2 bg-primary text-white program-rate">
+                  #3
+                </div>
+              </div>
+              <div class="program-text bg-white px-4 pb-3">
+                <div class="program-text-inner">
+                  <a href="#" class="h4">CCTV Surveillance</a>
+                  <p class="mt-3 mb-0">
+                    Our entire campus is monitored with CCTV cameras to ensure
+                    complete safety. <br />Trained staff members are always
+                    present to keep a close watch on children throughout the
+                    day. We also follow strict safety protocols to maintain a
+                    secure and caring environment.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"
+              ></div>
+            </div>
+          </div>
+
+          <!-- facilies-4-secured-campus -->
+          <div
+            id="facilities-4-secured-campus"
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
+            data-wow-delay="0.03s"
+          >
+            <div class="program-item rounded">
+              <div class="program-img position-relative">
+                <div class="overflow-hidden img-border-radius">
+                  <img
+                    src="img/program-3.jpg"
+                    class="img-fluid w-100"
+                    alt="Image"
+                  />
+                </div>
+                <div class="px-4 py-2 bg-primary text-white program-rate">
+                  #4
+                </div>
+              </div>
+              <div class="program-text bg-white px-4 pb-3">
+                <div class="program-text-inner">
+                  <a href="#" class="h4">Fully Secured Campus</a>
+                  <p class="mt-3 mb-0">
+                    The school premises are fully secured with proper entry
+                    control and child-safe infrastructure to prevent any
+                    unwanted access.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"
+              ></div>
+            </div>
+          </div>
+
+          <!-- facilies-5-dai-service -->
+          <div
+            id="facilities-5-dai-service"
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
+            data-wow-delay="0.05s"
+          >
+            <div class="program-item rounded">
+              <div class="program-img position-relative">
+                <div class="overflow-hidden img-border-radius">
+                  <img
+                    src="img/program-3.jpg"
+                    class="img-fluid w-100"
+                    alt="Image"
+                  />
+                </div>
+                <div class="px-4 py-2 bg-primary text-white program-rate">
+                  #5
+                </div>
+              </div>
+              <div class="program-text bg-white px-4 pb-3">
+                <div class="program-text-inner">
+                  <a href="#" class="h4">Caring Support Staff (Dai Care)</a>
+                  <p class="mt-3 mb-0">
+                    Our support staff takes care of children with patience and
+                    attention, helping them feel comfortable, safe, and well
+                    looked after throughout the day..
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"
+              ></div>
+            </div>
+          </div>
+
+          <!-- facilies-6-Computer Classes -->
+          <div
+            id="facilities-6-computer-classes"
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
+            data-wow-delay="0.03s"
+          >
+            <div class="program-item rounded">
+              <div class="program-img position-relative">
+                <div class="overflow-hidden img-border-radius">
+                  <img
+                    src="img/program-3.jpg"
+                    class="img-fluid w-100"
+                    alt="Image"
+                  />
+                </div>
+                <div class="px-4 py-2 bg-primary text-white program-rate">
+                  #6
+                </div>
+              </div>
+              <div class="program-text bg-white px-4 pb-3">
+                <div class="program-text-inner">
+                  <a href="#" class="h4">Computer Classes</a>
+                  <p class="mt-3 mb-0">
+                    Basic computer exposure and smart learning tools are
+                    introduced in a simple and fun way to build early digital
+                    awareness.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between px-4 py-1 bg-primary rounded-bottom"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-view="Teachers" class="container-fluid team py-5">
+      <div class="container py-5">
+        <a name="teachers"></a>
+        <div
+          class="mx-auto text-center wow fadeInRight"
+          style="max-width: 600px"
+        >
+          <h4
+            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+          >
+            Our Team
+          </h4>
+          <h1 class="mb-5 display-3">Meet With Our Expert Teacher</h1>
+        </div>
+        <div class="row g-5 justify-content-center">
+          <div id="t1" class="col-md-6 col-lg-3 col-xl-3 wow fadeInLeft">
+            <div
+              class="team-item border border-primary img-border-radius overflow-hidden"
+            >
+              <img src="img/team-1.jpg" class="img-fluid w-100" alt="" />
+              <div
+                class="team-icon d-flex align-items-center justify-content-center"
+              ></div>
+              <div class="team-content text-center py-3 pl-4 pr-4">
+                <h4 class="text-primary">Teacher name</h4>
+                <p class="text-muted mb-2">English Teacher</p>
+              </div>
+            </div>
+          </div>
+          <div id="t2" class="col-md-6 col-lg-3 col-xl-3 wow fadeInLeft">
+            <div
+              class="team-item border border-primary img-border-radius overflow-hidden"
+            >
+              <img src="img/team-2.jpg" class="img-fluid w-100" alt="" />
+              <div
+                class="team-icon d-flex align-items-center justify-content-center d-none"
+              >
+                <a
+                  class="share btn btn-primary btn-md-square text-white rounded-circle me-3"
+                  href=""
+                  ><i class="fas fa-share-alt"></i
+                ></a>
+                <a
+                  class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="share-link btn btn-primary btn-md-square text-white rounded-circle"
+                  href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+
+              <div class="team-content text-center py-3">
+                <h4 class="text-primary">Teacher name</h4>
+                <p class="text-muted mb-2">Math Teacher</p>
+              </div>
+            </div>
+          </div>
+          <div id="t3" class="col-md-6 col-lg-3 col-xl-3 wow fadeInLeft">
+            <div
+              class="team-item border border-primary img-border-radius overflow-hidden"
+            >
+              <img src="img/team-3.jpg" class="img-fluid w-100" alt="" />
+              <div class="team-content text-center py-3">
+                <h4 class="text-primary">Techer name</h4>
+                <p class="text-muted mb-2">English Teacher</p>
+              </div>
+            </div>
+          </div>
+          <div id="t4" class="col-md-6 col-lg-3 col-xl-3 wow fadeInLeft">
+            <div
+              class="team-item border border-primary img-border-radius overflow-hidden"
+            >
+              <img src="img/team-3.jpg" class="img-fluid w-100" alt="" />
+              <div class="team-content text-center py-3">
+                <h4 class="text-primary">abcd abd</h4>
+                <p class="text-muted mb-2">English Teacher</p>
+              </div>
+            </div>
+          </div>
+          <div id="t5" class="col-md-6 col-lg-3 col-xl-3 wow fadeInRight">
+            <div
+              class="team-item border border-primary img-border-radius overflow-hidden"
+            >
+              <img src="img/team-1.jpg" class="img-fluid w-100" alt="" />
+              <div
+                class="team-icon d-flex align-items-center justify-content-center"
+              ></div>
+              <div class="team-content text-center py-3">
+                <h4 class="text-primary">some name</h4>
+                <p class="text-muted mb-2">English Teacher</p>
+              </div>
+            </div>
+          </div>
+          <div id="t6" class="col-md-6 col-lg-3 col-xl-3 wow fadeInRight">
+            <div
+              class="team-item border border-primary img-border-radius overflow-hidden"
+            >
+              <img src="img/team-2.jpg" class="img-fluid w-100" alt="" />
+
+              <div class="team-content text-center py-3">
+                <h4 class="text-primary">teacher name</h4>
+                <p class="text-muted mb-2">English Teacher</p>
+              </div>
+            </div>
+          </div>
+          <div id="t7" class="col-md-6 col-lg-3 col-xl-3 wow fadeInRight">
+            <div
+              class="team-item border border-primary img-border-radius overflow-hidden"
+            >
+              <img src="img/team-3.jpg" class="img-fluid w-100" alt="" />
+
+              <div class="team-content text-center py-3">
+                <h4 class="text-primary">teacher name</h4>
+                <p class="text-muted mb-2">English Teacher</p>
+              </div>
+            </div>
+          </div>
+          <div id="t8" class="col-md-6 col-lg-3 col-xl-3 wow fadeInRight">
+            <div
+              class="team-item border border-primary img-border-radius overflow-hidden"
+            >
+              <img src="img/team-4.jpg" class="img-fluid w-100" alt="" />
+              <div class="team-content text-center py-3">
+                <h4 class="text-primary">teacher name</h4>
+                <p class="text-muted mb-2">English Teacher</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-view="Testimonial" class="container-fluid testimonial py-5">
+      <div class="container py-5">
+        <a name="testimonials"></a>
+        <div class="mx-auto text-center wow zoomIn" style="max-width: 700px">
+          <h4
+            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+          >
+            Our Testimonials
+          </h4>
+          <h1 class="mb-5 display-3">Parents Say About Us</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+          <div
+            class="wow fadeInUp testimonial-item img-border-radius bg-light border border-primary p-4"
+          >
+            <div class="p-4 position-relative">
+              <i
+                class="fa fa-quote-right fa-2x text-primary position-absolute"
+                style="top: 15px; right: 15px"
+              ></i>
+              <div class="d-flex align-items-center">
+                <div class="border border-primary bg-white rounded-circle">
+                  <img
+                    src="img/testimonial-2.jpg"
+                    class="rounded-circle p-2"
+                    style="
+                      width: 80px;
+                      height: 80px;
+                      border-style: dotted;
+                      border-color: var(--bs-primary);
+                    "
+                    alt=""
+                  />
+                </div>
+                <div class="ms-4">
+                  <h4 class="text-dark">Client Name</h4>
+                  <p class="m-0 pb-3">Profession</p>
+                  <div class="d-flex pe-5">
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="border-top border-primary mt-4 pt-3">
+                <p class="mb-0">
+                  Lorem Ipsum is simply dummy text of the printing Ipsum has
+                  been the industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="wow zoomIn testimonial-item img-border-radius bg-light border border-primary p-4"
+          >
+            <div class="p-4 position-relative">
+              <i
+                class="fa fa-quote-right fa-2x text-primary position-absolute"
+                style="top: 15px; right: 15px"
+              ></i>
+              <div class="d-flex align-items-center">
+                <div class="border border-primary bg-white rounded-circle">
+                  <img
+                    src="img/testimonial-2.jpg"
+                    class="rounded-circle p-2"
+                    style="
+                      width: 80px;
+                      height: 80px;
+                      border-style: dotted;
+                      border-color: var(--bs-primary);
+                    "
+                    alt=""
+                  />
+                </div>
+                <div class="ms-4">
+                  <h4 class="text-dark">Client Name</h4>
+                  <p class="m-0 pb-3">Profession</p>
+                  <div class="d-flex pe-5">
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="border-top border-primary mt-4 pt-3">
+                <p class="mb-0">
+                  Lorem Ipsum is simply dummy text of the printing Ipsum has
+                  been the industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="wow fadeInDown testimonial-item img-border-radius bg-light border border-primary p-4"
+          >
+            <div class="p-4 position-relative">
+              <i
+                class="fa fa-quote-right fa-2x text-primary position-absolute"
+                style="top: 15px; right: 15px"
+              ></i>
+              <div class="d-flex align-items-center">
+                <div class="border border-primary bg-white rounded-circle">
+                  <img
+                    src="img/testimonial-2.jpg"
+                    class="rounded-circle p-2"
+                    style="
+                      width: 80px;
+                      height: 80px;
+                      border-style: dotted;
+                      border-color: var(--bs-primary);
+                    "
+                    alt=""
+                  />
+                </div>
+                <div class="ms-4">
+                  <h4 class="text-dark">Client Name</h4>
+                  <p class="m-0 pb-3">Profession</p>
+                  <div class="d-flex pe-5">
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="border-top border-primary mt-4 pt-3">
+                <p class="mb-0">
+                  Lorem Ipsum is simply dummy text of the printing Ipsum has
+                  been the industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      data-view="Footer"
+      class="container-fluid footer py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <a name="contacts"></a>
+      <div class="container py-5 pt-1">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="footer-item">
+              <h2 href="#" class="navbar-brand school-name">
+                <span class="text-primary display-6">First Step</span>
+                <span class="text-secondary"> Play School</span>
+              </h2>
+              <p class="mt-2">&nbsp</p>
+              <div
+                class="d-flex flex-column p-3 ps-3 text-dark border border-secondary"
+                style="border-radius: 50% 20% / 10% 40%"
+              >
+                <h4
+                  class="text-secondary mb-2 border-bottom border-secondary border-2 d-inline-block p-2 title-border-radius"
+                >
+                  Timing
+                </h4>
+                <!-- <div style="margin-left: 30px" class="time-table-list">
+                  <p>Monday: 8am to 5pm</p>
+                  <p>Tuesday: 8am to 5pm</p>
+                  <p>Wednes: 8am to 5pm</p>
+                  <p>Thursday: 8am to 5pm</p>
+                  <p>Friday: 8am to 5pm</p>
+                  <p>Saturday: 8am to 5pm</p>
+                  <p class="mb-0 textRed">Sunday: Closed</p>
+                </div> -->
+                <ul class="time-table-list">
+                  <li>Monday: 8am to 5pm</li>
+                  <li>Tuesday: 8am to 5pm</li>
+                  <li>Wednes: 8am to 5pm</li>
+                  <li>Thursday: 8am to 5pm</li>
+                  <li>Friday: 8am to 5pm</li>
+                  <li>Saturday: 8am to 5pm</li>
+                  <li class="mb-0 textRed">Sunday: Closed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xl-4">
+            <div class="footer-item">
+              <h4
+                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+              >
+                LOCATION
+              </h4>
+              <div class="d-flex flex-column align-items-start">
+                <a href="" class="text-body mb-4">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                  Imamgang, Raniganj, Bihar- 824206
+                </a>
+                <a href="" class="text-start rounded-0 text-body mb-4">
+                  <i class="fa fa-phone-alt text-primary me-2"></i>
+                  <span class="text-primaryx me-2x">8976885726</span>
+                </a>
+                <a href="" class="text-start rounded-0 text-body mb-4">
+                  <i class="fas fa-envelope text-primary me-2"></i>
+                  firstStepPlaySchool@gmail.com
+                </a>
+                <a href="" class="text-start rounded-0 text-body mb-4">
+                  <i class="fa fa-clock text-primary me-2"></i> 26/7 Hours
+                  Service
+                </a>
+                <div class="footer-icon d-flex">
+                  <a
+                    class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"
+                    href="https://www.facebook.com/firststepraniganj"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i
+                  ></a>
+
+                  <a
+                    href="https://www.instagram.com/first_step_play_school900/"
+                    class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://wa.me/918976885726"
+                    class="btn btn-primary btn-sm-square rounded-circle text-white"
+                    target="_blank"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3">
+            <div class="footer-item">
+              <h4
+                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+              >
+                OUR GALLARY
+              </h4>
+              <div class="row g-3">
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-1.jpg"
+                      class="img-fluid rounded-circle p-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-1.jpg"
+                      class="img-fluid rounded-circle p-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-1.jpg"
+                      class="img-fluid rounded-circle p-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-1.jpg"
+                      class="img-fluid rounded-circle p-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-1.jpg"
+                      class="img-fluid rounded-circle p-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-1.jpg"
+                      class="img-fluid rounded-circle p-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-1.jpg"
+                      class="img-fluid rounded-circle p-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-1.jpg"
+                      class="img-fluid rounded-circle p-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-view="Copyright" class="container-fluid copyright bg-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 my-auto text-white developerCredit">
+            Developed by Sudhir gupta
+          </div>
+          <div class="col-sm-6 col-md-4 text-center copyrightText">
+            <span class="text-light color-primary"
+              >Copyright 2025-2026, <br />First Step Play School. All Rights
+              Reserved.</span
+            >
+          </div>
+          <div class="col-sm-6 col-md-4 col-sm-4" id="memberLoginFooter">
+            <div class="footer-icon d-flex">
+              <a
+                href="javascript:void(0)"
+                onclick="goToOkulProErp()"
+                class="btn btn-primary me-3 text-white"
+              >
+                <i class="fas fa-lock"></i>Managment Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      href="#"
+      class="btn btn-primary border-3 border-primary rounded-circle back-to-top"
+    >
+      <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/spinner.js"></script>
+    <!-- JavaScript Libraries ends -->
+
+    <script>
+      const images = [
+        "./img/blog-1.jpg",
+        "./img/program-1.jpg",
+        "./img/program-2.jpg",
+      ];
+      let index = 0;
+      function changeBackground() {
+        index = (index + 1) % images.length;
+
+        const elements = document.querySelectorAll(
+          ".hero-header, .page-header",
+        );
+
+        elements.forEach((el) => {
+          el.style.backgroundImage = `url('${images[index]}')`;
+        });
+      }
+      document.querySelectorAll(".hero-header, .page-header").forEach((el) => {
+        el.style.backgroundImage = `url('${images[0]}')`;
+      });
+      setInterval(changeBackground, 3000);
+    </script>
+  </body>
 </html>
+
+sdfsd
