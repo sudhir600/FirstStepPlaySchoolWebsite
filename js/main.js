@@ -1,6 +1,5 @@
-
 function showMoreAboutDetails() {
-    alert('under construction')
+  alert("under construction");
 }
 
 const btn = document.getElementById("memberLoginBtnTop");
@@ -14,8 +13,7 @@ btn.addEventListener("mouseleave", () => {
   icon.classList.remove("fa-unlock");
 });
 
-
 function goToOkulProErp() {
-  const host = window.location.hostname; 
+  const host = window.location.hostname;
   window.location.href = "http://okulpro." + host;
 }
